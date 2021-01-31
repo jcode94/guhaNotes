@@ -2,3 +2,5 @@
 /binTree
 /binTree.o
 /maxones.c
+*.[oa]
+*~
