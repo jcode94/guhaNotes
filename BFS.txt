@@ -1,0 +1,13 @@
+// From http://www.cs.yale.edu/homes/aspnes/pinewiki/BreadthFirstSearch.html
+
+BFS(Graph, startNode):
+    Q = an empty queue
+    mark[G->n] = array of booleans, one per vertex, initially false
+    mark[startNode] = true
+    push(startNode, Q)
+    while Q is not empty:
+        u = pop(Q)
+        DoSomethingTo(u)
+        for each successor v of u: // Look for children
+            if mark[v] = false:
+                push(v, Q) // Add to queue for processing
